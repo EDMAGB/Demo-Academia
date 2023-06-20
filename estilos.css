@@ -18,7 +18,10 @@
       /* background: #f9f5f8;  */
       background-image: url("imagenes/fondo1.png");
   }
-
+  .ima_p{
+    width: 100%;
+    margin: 10%;
+  }
   .container2 {
       width: 100%;
       padding: 0 10%;
@@ -117,8 +120,6 @@
       line-height: 60px;
       border-radius: 50px;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-      margin-left: 10px;
-      margin-right: 10px;
       font-family: 'Mons', sans-serif;
       padding: 10px;
       text-align: center;
@@ -128,7 +129,6 @@
       position: relative;
       margin-top: 0em;
       display: flex;
-
   }
 
   .wrapper nav label {
@@ -136,19 +136,17 @@
       width: 100%;
       z-index: 1;
       cursor: pointer;
-      align-content: center;
-
-
+      text-align: center;
   }
 
   .wrapper nav label a {
       position: relative;
       z-index: -1;
-      color: #1d1f20;
+      color: #060606;
       font-size: 20px;
       text-decoration: none;
       transition: color 0.6s ease;
-      padding: 30px
+      padding: 0;
   }
 
   .wrapper nav #home:checked~label.home a,
@@ -156,7 +154,7 @@
   .wrapper nav #contact:checked~label.contact a,
   .wrapper nav #heart:checked~label.heart a,
   .wrapper nav #about:checked~label.about a {
-      color: #fff;
+      color: hsl(0, 7%, 97%);
       font-weight: 900px;
   }
 
@@ -169,7 +167,7 @@
   .wrapper nav .tab {
       position: absolute;
       height: 74px;
-      width: 30%;
+      width: 35%;
       left: -8px;
       bottom: 5px;
       z-index: 0;
@@ -489,118 +487,122 @@
 
 
 
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+  .modalpro {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
   }
-  
+
   .modal-content-mo {
-    background: linear-gradient(98.18deg, rgba(250, 0, 255, 0.54) 4.85%, #7B2EE0 77.76%, #1D0B66 109.19%);
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
-    border-radius: 3rem;
-    color: #fff;
+      background: linear-gradient(98.18deg, rgba(250, 0, 255, 0.54) 4.85%, #7B2EE0 77.76%, #1D0B66 109.19%);
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 100%;
+      max-width: 500px;
+      height: 100%;
+      max-height: 100px;
+      text-align: center;
+      border-radius: 3rem;
+      color: #fff;
   }
-  
+
   .close {
-    color: #7c7979;
-    float: right;
-    font-size: 100px;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 10px;
-    padding: 10px;
-    z-index: 1000;
+      color: #7c7979;
+      float: right;
+      font-size: 100px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 10px;
+      padding: 10px;
+      z-index: 1000;
 
   }
-  
+
   .close:hover,
   .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
   }
-  
+
   .animated-text {
-    display: inline-block;
-    animation: blink 1s infinite;
+      display: inline-block;
+      animation: blink 1s infinite;
   }
-  
+
   @keyframes blink {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+      0% {
+          opacity: 0;
+      }
+
+      50% {
+          opacity: 1;
+      }
+
+      100% {
+          opacity: 0;
+      }
   }
-  
-
-      /* Estilos para el modal pago */
-      .modalp {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-
-    .modal-content-p {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 600px;
-        height: 500px;
-        background-color: #fff;
-        border-radius: 3rem;
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .modal-titulo {
-        background: linear-gradient(98.18deg, rgba(250, 0, 255, 0.54) 4.85%, #7B2EE0 77.76%, #1D0B66 109.19%);
-        border-top-left-radius: 3rem;
-        border-top-right-radius: 3rem;
-        padding: 5px;
-        width: 100%;
-        height: 30%;
-
-    }
 
 
-    .titulo-tex {
-        font-family: 'Mons', sans-serif;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 60px;
-        line-height: 73px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #f2f0f0;       
-        position: absolute;
-    }
+  /* Estilos para el modal pago */
+  .modalp {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content-p {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 500px;
+      background-color: #fff;
+      border-radius: 3rem;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .modal-titulo {
+      background: linear-gradient(98.18deg, rgba(250, 0, 255, 0.54) 4.85%, #7B2EE0 77.76%, #1D0B66 109.19%);
+      border-top-left-radius: 3rem;
+      border-top-right-radius: 3rem;
+      padding: 5px;
+      width: 100%;
+      height: 30%;
+
+  }
 
 
-    /* @media (max-width: 400px) {   
+  .titulo-tex {
+      font-family: 'Mons', sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 60px;
+      line-height: 73px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #f2f0f0;
+      position: absolute;
+  }
+
+
+  /* @media (max-width: 400px) {   
         body {
             background-image: url("imagenes/fondo2.png");
         }   
@@ -623,16 +625,16 @@
         }
 
       } */
-      
 
-      @media only screen and (max-width: 428px) {
-        body {
+
+  @media only screen and (max-width: 428px) {
+      body {
           font-size: 50px;
           background: #090909;
-        }
-        
-        .container {
+      }
+
+      .container {
           width: 90%;
           margin: 0 auto;
-        }
       }
+  }

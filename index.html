@@ -17,7 +17,7 @@
 
     </head>
     <body>
-        <div id="modal" class="modal">
+        <div id="modal" class="modalpro">
             <div class="modal-content-mo">
                 <span class="close">&times;</span>
                 <h2><span class="animated-text">¡Próximamente!</span></h2>
@@ -27,11 +27,12 @@
         <div id="myModal" class="modalp">
             <div class="modal-content-p">
                 <div class="modal-titulo">
-                    <span class="close" onclick="closeModal()">&times;</span>
                     <h2 class="titulo-tex">¡Quiero inscribirme!</h2>
+                    <span class="close" onclick="closeModal()">&times;</span>
                 </div>
                 <br><br>
                 <div class="button-container">
+
                     <button class="button" onclick="carrito(1);">Inscripción
                         Presencial <br><span>$950 MXN</span></button>
                     <button class="button" onclick="carrito(2);">Colegiatura
@@ -63,7 +64,6 @@
                 target="_blank" class="Face-button">
                 <img src="imagenes/facebook.png" alt="Facebook">
             </a>
-
             <div class="row">
                 <div class="col-3">
                     <img src="imagenes/Variantes-04 1.png" class="ima_p">
@@ -72,16 +72,12 @@
                     <br><br><br>
                     <div class="wrapper">
                         <nav>
-                            <input type="radio" name="tab" id="inbox">
+                            <input type="radio" name="tab" id="inbox" checked>
                             <input type="radio" name="tab" id="open-modal">
                             <input type="radio" name="tab" id="heart">
-                            <label for="inbox" class="inbox"><a href="#"><i
-                                        class="fa-solid fa-people-roof"
-                                        id="changeColorButton"></i>Presencial</a></label>
-                            <label for="open-modal" class="contact"><a href="#"><i
-                                        class="fa-solid fa-desktop"></i>Online</a></label>
-                            <label for="heart" class="heart"><a href="#"><i
-                                        class="far fa-heart"></i>¡Inscríbete!</a></label>
+                            <label for="inbox" class="inbox"><a href="#"><i class="fa-solid fa-people-roof" id="changeColorButton"></i>Presencial</a></label>
+                            <label for="open-modal" class="contact"><a href="#"><i class="fa-solid fa-desktop"></i>Online</a></label>
+                            <label for="heart" class="heart"><a href="#"><i class="far fa-heart"></i>¡Inscríbete!</a></label>
                             <div class="tab">
                             </div>
                         </nav>
@@ -94,7 +90,8 @@
                     </div>
                     <div class="col-10">
                         <label id="principal">¿Alguna vez has pensado en ser
-                            influencer,<span>pero no sabes como crear contenido?</span></label>
+                            influencer,<span><br>pero no sabes como crear
+                                contenido?</span></label>
                     </div>
                     <div class="col-1">
                     </div>
@@ -111,7 +108,7 @@
                     </div>
 
                 </div>
-                <br><br><hr><br>
+                <hr>
                 <div class="row">
                     <div class="col-4">
                     </div>
@@ -123,7 +120,6 @@
                     </div>
                 </div>
                 <br>
-
                 <div class="row">
                     <img id='imagen-vector' src="imagenes/Vector 5.png">
                     <div class="col-7" id="text-b">
