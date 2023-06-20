@@ -200,6 +200,7 @@
       align-items: center;
       text-align: center;
       letter-spacing: 0.01em;
+      font-family: 'Mons', sans-serif;    
       background: linear-gradient(90.05deg, #F5B301 7.73%, #FE5339 28.03%, #FB0DE0 52.65%, #6C01FF 84.18%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
