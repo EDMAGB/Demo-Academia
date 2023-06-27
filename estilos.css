@@ -226,7 +226,7 @@
   #principal {
       font-weight: 700;
       font-size: 30px;
-      line-height: 50px;
+      line-height: 30px;
       align-items: center;
       text-align: center;
       letter-spacing: 0.01em;
@@ -239,7 +239,7 @@
   #principal span {
       font-weight: 700;
       font-size: 30px;
-      line-height: 50px;
+      line-height: 30px;
       align-items: center;
       text-align: center;
       letter-spacing: 0.01em;
@@ -253,7 +253,7 @@
   #principal2 {
       font-weight: 700;
       font-size: 31px;
-      line-height: 30px;
+      line-height: 40px;
       align-items: center;
       text-align: center;
       letter-spacing: 0.01em;
@@ -333,7 +333,7 @@
   #text-b #text-bienvenida #neg {
       font-size: 200%;
       line-height: 110%;
-      font-family: 'Mons-Black';
+      font-family: 'Mons-Bold';
   }
 
   #text-b #text-bienvenida #col {
@@ -343,7 +343,8 @@
       background: linear-gradient(90.05deg, #F5B301 7.73%, #FE5339 28.03%, #FB0DE0 52.65%, #6C01FF 84.18%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-family: 'Mons-Bold';
+      font-family: 'Mons-Black';
+      
   }
 
   #tex-tex {
@@ -437,21 +438,21 @@
   }
 
   #tex-tex2 {
-      font-weight: bold;
       font-size: 110%;
       line-height: 110%;
-      font-family: 'Mons-ExtraBold';
+      font-family: 'Mons-Regular';
   }
 
   #tex-tex2 #text-azul {
       font-weight: 900;
       font-size: 130%;
-      line-height: 50px;
+      line-height: 40px;
       letter-spacing: 0.01em;
       background: rgba(29, 11, 102, 1);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-family: 'Mons-Regular';
+      font-family: 'Mons-ExtraBold';
+     
   }
 
   .gallery {
