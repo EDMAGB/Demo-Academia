@@ -289,7 +289,7 @@
   #imagen-vector2 {
       position: absolute;
       width: 31%;
-      z-index: 0;
+      z-index: -10;
       left: 61%;
   }
 
