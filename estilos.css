@@ -1,13 +1,41 @@
   @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
   @font-face {
-      font-family: 'Mons';
-      src: url('font/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+      font-family: 'Mons-Italic';
+      src: url('font/Montserrat-Italic.ttf') format('truetype');
 
   }
 
+  @font-face {
+      font-family: 'Mons-Black';
+      src: url('font/Montserrat-Black.ttf') format('truetype');
+
+  }
+
+  @font-face {
+      font-family: 'Mons-Light';
+      src: url('font/Montserrat-Light.ttf') format('truetype');
+
+  }
+
+  @font-face {
+      font-family: 'Mons-Regular';
+      src: url('font/Montserrat-Regular.ttf') format('truetype');
+
+  }
+
+  @font-face {
+      font-family: 'Mons-Bold';
+      src: url('font/Montserrat-Bold.ttf') format('truetype');
+
+  }
+  @font-face {
+    font-family: 'Mons-ExtraBold';
+    src: url('font/Montserrat-ExtraBold.ttf') format('truetype');
+
+}
   * {
-      font-family: 'Mons', sans-serif;
+      font-family: 'Mons-Light', sans-serif;
   }
 
   body {
@@ -18,10 +46,12 @@
       /* background: #f9f5f8;  */
       background-image: url("imagenes/fondo1.png");
   }
-  .ima_p{
-    width:60%;
-    margin: -20%;
+
+  .ima_p {
+      width: 60%;
+      margin: -20%;
   }
+
   .container2 {
       width: 100%;
       padding: 0 10%;
@@ -200,7 +230,7 @@
       align-items: center;
       text-align: center;
       letter-spacing: 0.01em;
-      font-family: 'Mons', sans-serif;    
+      font-family: 'Mons-Regular';
       background: linear-gradient(90.05deg, #F5B301 7.73%, #FE5339 28.03%, #FB0DE0 52.65%, #6C01FF 84.18%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -216,6 +246,7 @@
       background: rgba(29, 11, 102, 1);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      font-family: 'Mons-Black';
   }
 
   #principal2 {
@@ -228,6 +259,8 @@
       background: rgba(29, 11, 102, 1);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      font-family: 'Mons-ExtraBold';
+    
   }
 
   #imagen-vector {
@@ -269,7 +302,7 @@
 
   /* Boton */
   .gradient-button {
-      background:#1D0B66;
+      background: #1D0B66;
       color: #FFF;
       font-size: 20px;
       font-weight: bold;
@@ -299,9 +332,9 @@
   } */
 
   #text-b #text-bienvenida #neg {
-      font-weight: bold;
       font-size: 200%;
       line-height: 110%;
+      font-family: 'Mons-Black';
   }
 
   #text-b #text-bienvenida #col {
@@ -311,10 +344,12 @@
       background: linear-gradient(90.05deg, #F5B301 7.73%, #FE5339 28.03%, #FB0DE0 52.65%, #6C01FF 84.18%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      font-family: 'Mons-Bold';
   }
 
   #tex-tex {
       font-weight: 600;
+      font-family: 'Mons-Regular', sans-serif;
   }
 
   .modal-content-p .button-container {
@@ -405,20 +440,18 @@
       font-weight: bold;
       font-size: 110%;
       line-height: 110%;
-      text-align: left;
-      justify-content: left;
+      font-family: 'Mons-ExtraBold';
   }
 
   #tex-tex2 #text-azul {
       font-weight: 900;
       font-size: 130%;
       line-height: 50px;
-      align-items: center;
-      text-align: center;
       letter-spacing: 0.01em;
       background: rgba(29, 11, 102, 1);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      font-family: 'Mons-Regular';
   }
 
   .gallery {
@@ -484,6 +517,9 @@
       color: #fff;
       text-align: center;
   }
+  .footer-container label{
+      text-align: center;
+}
 
 
 
